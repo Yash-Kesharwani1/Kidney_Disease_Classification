@@ -61,3 +61,143 @@
 [2024-06-01 02:00:54,399: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x=======================x]
+[2024-06-01 12:50:34,791: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-01 12:50:34,802: INFO: common: yaml file: C:\Users\Yash\ml_project2\Kidney_Disease_Classification\config\config.yaml loaded successfully]
+[2024-06-01 12:50:34,853: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-01 12:50:34,860: INFO: common: created directory at: artifacts]
+[2024-06-01 12:50:34,862: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-01 12:50:34,864: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-01 12:53:52,369: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-01 12:53:54,067: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x=======================x]
+[2024-06-01 13:22:30,499: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-06-01 15:12:05,229: INFO: common: yaml file: C:\Users\Yash\ml_project2\Kidney_Disease_Classification\config\config.yaml loaded successfully]
+[2024-06-01 15:12:05,247: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-01 15:12:05,252: INFO: common: created directory at: artifacts]
+[2024-06-01 15:12:05,252: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-01 15:15:22,691: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-01 15:31:12,227: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-06-01 15:31:13,925: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-01 15:31:13,930: INFO: common: yaml file: C:\Users\Yash\ml_project2\Kidney_Disease_Classification\config\config.yaml loaded successfully]
+[2024-06-01 15:31:13,930: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-01 15:31:13,930: INFO: common: created directory at: artifacts]
+[2024-06-01 15:31:13,935: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-01 15:31:13,935: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-01 15:34:49,905: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-01 15:34:51,783: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x=======================x]
+[2024-06-01 15:34:51,785: INFO: main: ***************************]
+[2024-06-01 15:34:51,786: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-01 15:34:51,787: INFO: common: yaml file: C:\Users\Yash\ml_project2\Kidney_Disease_Classification\config\config.yaml loaded successfully]
+[2024-06-01 15:34:51,795: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-01 15:34:51,797: INFO: common: created directory at: artifacts]
+[2024-06-01 15:34:51,797: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-01 15:34:51,797: ERROR: main: 'NoneType' object has no attribute 'params_image_size']
+Traceback (most recent call last):
+  File "C:\Users\Yash\ml_project2\Kidney_Disease_Classification\main.py", line 25, in <module>
+    obj.main()
+  File "c:\users\yash\ml_project2\kidney_disease_classification\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 16, in main
+    prepare_base_model.get_base_model()
+  File "c:\users\yash\ml_project2\kidney_disease_classification\src\cnnClassifier\components\prepare_base_model.py", line 14, in get_base_model
+    input_shape = self.config.params_image_size,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'params_image_size'
+[2024-06-01 15:43:37,960: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-06-01 15:43:39,531: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-01 15:43:39,533: INFO: common: yaml file: C:\Users\Yash\ml_project2\Kidney_Disease_Classification\config\config.yaml loaded successfully]
+[2024-06-01 15:43:39,533: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-01 15:43:39,533: INFO: common: created directory at: artifacts]
+[2024-06-01 15:43:39,533: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-01 15:43:39,541: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-01 15:44:28,202: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-06-01 15:44:30,068: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-01 15:44:30,073: INFO: common: yaml file: C:\Users\Yash\ml_project2\Kidney_Disease_Classification\config\config.yaml loaded successfully]
+[2024-06-01 15:44:30,079: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-01 15:44:30,082: INFO: common: created directory at: artifacts]
+[2024-06-01 15:44:30,085: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-01 15:44:30,087: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-01 15:48:26,451: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-01 15:48:28,209: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x=======================x]
+[2024-06-01 15:48:28,210: INFO: main: ***************************]
+[2024-06-01 15:48:28,211: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-01 15:48:28,221: INFO: common: yaml file: C:\Users\Yash\ml_project2\Kidney_Disease_Classification\config\config.yaml loaded successfully]
+[2024-06-01 15:48:28,222: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-01 15:48:28,222: INFO: common: created directory at: artifacts]
+[2024-06-01 15:48:28,229: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-01 15:48:28,230: ERROR: main: 'NoneType' object has no attribute 'params_image_size']
+Traceback (most recent call last):
+  File "C:\Users\Yash\ml_project2\Kidney_Disease_Classification\main.py", line 25, in <module>
+    obj.main()
+  File "c:\users\yash\ml_project2\kidney_disease_classification\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 16, in main
+    prepare_base_model.get_base_model()
+  File "c:\users\yash\ml_project2\kidney_disease_classification\src\cnnClassifier\components\prepare_base_model.py", line 14, in get_base_model
+    input_shape = self.config.params_image_size,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'params_image_size'
+[2024-06-01 16:09:00,963: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-06-01 16:09:03,285: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-01 16:09:03,289: INFO: common: yaml file: C:\Users\Yash\ml_project2\Kidney_Disease_Classification\config\config.yaml loaded successfully]
+[2024-06-01 16:09:03,293: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-01 16:09:03,295: INFO: common: created directory at: artifacts]
+[2024-06-01 16:09:03,296: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-01 16:09:03,298: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-01 16:10:14,021: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-06-01 16:10:16,401: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-01 16:10:16,413: INFO: common: yaml file: C:\Users\Yash\ml_project2\Kidney_Disease_Classification\config\config.yaml loaded successfully]
+[2024-06-01 16:10:16,420: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-01 16:10:16,423: INFO: common: created directory at: artifacts]
+[2024-06-01 16:10:16,423: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-01 16:10:16,426: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-01 16:12:50,217: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-01 16:12:51,984: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x=======================x]
+[2024-06-01 16:12:51,984: INFO: main: ***************************]
+[2024-06-01 16:12:51,984: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-01 16:12:51,984: INFO: common: yaml file: C:\Users\Yash\ml_project2\Kidney_Disease_Classification\config\config.yaml loaded successfully]
+[2024-06-01 16:12:51,984: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-01 16:12:51,984: INFO: common: created directory at: artifacts]
+[2024-06-01 16:12:51,984: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-01 16:12:53,472: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-01 16:12:53,681: ERROR: main: PrepareBaseModel._prepare_full_model() got an unexpected keyword argument 'freeza_all']
+Traceback (most recent call last):
+  File "C:\Users\Yash\ml_project2\Kidney_Disease_Classification\main.py", line 25, in <module>
+    obj.main()
+  File "c:\users\yash\ml_project2\kidney_disease_classification\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 17, in main
+    prepare_base_model.updata_base_model()
+  File "c:\users\yash\ml_project2\kidney_disease_classification\src\cnnClassifier\components\prepare_base_model.py", line 50, in updata_base_model
+    self.full_model = self._prepare_full_model(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PrepareBaseModel._prepare_full_model() got an unexpected keyword argument 'freeza_all'
+[2024-06-01 16:17:09,445: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-06-01 16:17:11,549: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-01 16:17:11,554: INFO: common: yaml file: C:\Users\Yash\ml_project2\Kidney_Disease_Classification\config\config.yaml loaded successfully]
+[2024-06-01 16:17:11,559: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-01 16:17:11,563: INFO: common: created directory at: artifacts]
+[2024-06-01 16:17:11,563: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-01 16:17:11,563: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-01 16:20:34,960: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-01 16:20:35,956: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x=======================x]
+[2024-06-01 16:20:35,956: INFO: main: ***************************]
+[2024-06-01 16:20:35,956: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-06-01 16:20:35,962: INFO: common: yaml file: C:\Users\Yash\ml_project2\Kidney_Disease_Classification\config\config.yaml loaded successfully]
+[2024-06-01 16:20:35,967: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-01 16:20:35,968: INFO: common: created directory at: artifacts]
+[2024-06-01 16:20:35,968: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-01 16:20:37,222: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-01 16:20:37,358: ERROR: main: PrepareBaseModel._prepare_full_model() got an unexpected keyword argument 'freeza_all']
+Traceback (most recent call last):
+  File "C:\Users\Yash\ml_project2\Kidney_Disease_Classification\main.py", line 25, in <module>
+    obj.main()
+  File "c:\users\yash\ml_project2\kidney_disease_classification\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 17, in main
+    prepare_base_model.updata_base_model()
+  File "c:\users\yash\ml_project2\kidney_disease_classification\src\cnnClassifier\components\prepare_base_model.py", line 50, in updata_base_model
+    self.full_model = self._prepare_full_model(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PrepareBaseModel._prepare_full_model() got an unexpected keyword argument 'freeza_all'
