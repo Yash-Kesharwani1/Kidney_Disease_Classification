@@ -39,19 +39,20 @@ class PrepareBaseModel:
         )
         
         full_model.compile(
-            optimizer = tf.keras.optimizer.SGD(leaning_rate = learning_rate),
+            optimizer = tf.keras.optimizers.SGD(learning_rate = learning_rate),
             loss = tf.keras.losses.CategoricalCrossentropy(),
             metrics = ['accuracy']
         )
         
         full_model.summary()
         return full_model
+    
     def updata_base_model(self):
         self.full_model = self._prepare_full_model(
             model = self.model,
             classes = self.config.params_classes,
-            freeza_all = True,
-            freez_till = None,
+            freeze_all = True,
+            freeze_till = None,
             learning_rate = self.config.params_learning_rate
         )
         self.save_model(path = self.config.updated_base_model_path, model = self.full_model)
